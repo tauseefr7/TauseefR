@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Hugo 0.74.1" />
+
+  <title>Principal Component Analysis on Swiss Bank Notes &middot; Tauseef Rehman</title>
+
+  <meta name="description" content="Principal Component Analysis on Swiss Bank Notes" />
+
+  
+
+<meta itemprop="name" content="Principal Component Analysis on Swiss Bank Notes">
+<meta itemprop="description" content="Principal Component Analysis on Swiss Bank Notes">
+<meta itemprop="datePublished" content="2021-04-09T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2021-04-09T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="794">
+<meta itemprop="image" content="https://tauseefr7.github.io/Tauseef_Portfolio/images/profile.png"/>
+
+
+
+<meta itemprop="keywords" content="Probability Distributions," />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://tauseefr7.github.io/Tauseef_Portfolio/images/profile.png"/>
+
+<meta name="twitter:title" content="Principal Component Analysis on Swiss Bank Notes"/>
+<meta name="twitter:description" content="Principal Component Analysis on Swiss Bank Notes"/>
+
+
+<meta property="og:title" content="Principal Component Analysis on Swiss Bank Notes" />
+<meta property="og:description" content="Principal Component Analysis on Swiss Bank Notes" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://tauseefr7.github.io/Tauseef_Portfolio/post/pca/" />
+<meta property="og:image" content="https://tauseefr7.github.io/Tauseef_Portfolio/images/profile.png"/>
+<meta property="article:published_time" content="2021-04-09T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-04-09T00:00:00+00:00" /><meta property="og:site_name" content="Soho" />
+
+
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/Tauseef_Portfolio/css/print.css"
+        media="print">
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/Tauseef_Portfolio/css/poole.css">
+
+  <link type="text/css"
+        rel="stylesheet"
+        href="/Tauseef_Portfolio/css/hyde.css">
+
+  
+<style type="text/css">
+  .sidebar {
+    background-color: #15022B;
+  }
+
+  .read-more-link a {
+    border-color: #15022B;
+  }
+
+  .pagination li a {
+    color: #15022B;
+    border: 1px solid #15022B;
+  }
+
+  .pagination li.active a {
+    background-color: #15022B;
+  }
+
+  .pagination li a:hover {
+    background-color: #15022B;
+    opacity: 0.75;
+  }
+
+  footer a,
+  .content a,
+  .related-posts li a:hover {
+    color: #15022B;
+  }
+</style>
+
+
+
+  
+
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap">
+
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+        crossorigin="anonymous" />
+
+  <link rel="apple-touch-icon-precomposed"
+        sizes="144x144"
+        href="/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  </head>
+<body>
+  <aside class="sidebar">
+  <div class="container">
+    <div class="sidebar-about">
+      
+        
+        <div class="author-image">
+          <img src="/Tauseef_Portfolio/images/profile.png" class="img-circle img-headshot center" alt="Profile Picture">
+        </div>
+        
+      
+
+      <h1>Tauseef Rehman</h1>
+
+      
+      <p class="lead">Data Science Portfolio</p>
+      
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li>
+          <a href="https://tauseefr7.github.io/Tauseef_Portfolio/">Home</a>
+        </li>
+        <li>
+          <a href="/Tauseef_Portfolio/about/">About</a>
+        </li><li>
+          <a href="/Tauseef_Portfolio/contact/">Contact</a>
+        </li><li>
+          <a href="/Tauseef_Portfolio/posts/">Posts</a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="social-icons">
+      
+      <a href="https://www.linkedin.com/in/rehmantauseef/" rel="me" title="Linkedin" target="_blank">
+        <i class="fab fa-linkedin" aria-hidden="true"></i>
+      </a>
+      
+      <a href="https://github.com/tauseefr7" rel="me" title="GitHub" target="_blank">
+        <i class="fab fa-github" aria-hidden="true"></i>
+      </a>
+      
+    </section>
+  </div>
+</aside>
+
+
+  <main class="content container">
+  <div class="post">
+  <h1>Principal Component Analysis on Swiss Bank Notes</h1>
+
+  <div class="post-date">
+    <time datetime="2021-04-09T00:00:00Z">Apr 9, 2021</time> &middot; 4 min read
+  </div>
+
+  <!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>The assumptions of PCA if it is to work well:</p>
+<p><strong>Linearity</strong></p>
+<ul>
+<li>Assumes the data set to be linear combinations of the variables.</li>
+</ul>
+<p><strong>The importance of mean and covariance</strong></p>
+<ul>
+<li>There is no guarantee that the directions of maximum variance will contain good features for discrimination.</li>
+</ul>
+<p><strong>That large variances have important dynamics</strong></p>
+<ul>
+<li>Assumes that components with larger variance correspond to interesting dynamics and lower ones correspond to noise.</li>
+</ul>
+<p>It is found that for our dataset PCA works well, however this is not always the case and other techniques may need to be used for non-linear datasets e.g. Kernel PCA.</p>
+<p>There are a number of ways for deciding the number of principal components (PCs), there are subjective methods (e.g. the scree plot), distribution-based test tools (e.g. Bartlett’s test), and computational procedures (e.g. cross-validation). Each branch of methods has advantages and disadvantages.</p>
+<p>In this post we show two related methods, the scree plot (&ldquo;elbow method&rdquo;) and the threshold of cumulative variance.</p>
+<p>The scree plot “elbow” method aims to determine the point where adding another principal component does not explains little variance in comparison to previous principal components.</p>
+<p>Another method directly connected with the scree plot method is picking a threshold of cumulative variance explained by the first n PCs. We can choose q to be the smallest integer such that the q first PCs explain at least x% of variance. We can pick x depending on the task.</p>
+<p>After cleaning our data we apply PCA to our data using sklearn in python. This calculates the covariance matrix of our data matrix and carries out singular value decomposition (SVD) to find the eigenvalues (diagonal matrix) and eigenvectors (column vector) and obtain the following scree plot:</p>
+<p><img src="https://user-images.githubusercontent.com/55932784/114241177-ab13d780-9980-11eb-92bd-d601f8ac584e.png" alt="ScreePlot1"></p>
+<p>Above we can identify an &ldquo;elbow” on the 3rd principal component. According to this method, we choose number of PCs just before the “elbow” which is 2.</p>
+<p>Sklearn&rsquo;s PCA class centres the data but does not scale it. Here we scale the data to have a variance of 1 before carrying out PCA. Now our data is standardised with a mean of 0 and variance of 1.</p>
+<p><img src="https://user-images.githubusercontent.com/55932784/114241179-abac6e00-9980-11eb-8530-9417350e7294.png" alt="ScreePlot2"></p>
+<p>Similarly on the standardised data above we can again identify an &ldquo;elbow” on the 3rd principal component. According to this method, we choose number of PCs just before the “elbow” which is 2.</p>
+<p>The other way we can pick the number of PCs is to pick a threshold of cumulative variance we want our data to have.</p>
+<p>If we choose the threshold of cumulative variance to be 90% then according to this method we should choose 3 PCs which explain in total 93% of the variance.</p>
+<p><img src="https://user-images.githubusercontent.com/55932784/114241181-ac450480-9980-11eb-8352-f21bf35f2cea.png" alt="CumulativeVariance"></p>
+<h3 id="pca-comparison-standardisation-vs-non-standardisation">PCA comparison Standardisation vs Non-standardisation</h3>
+<p><img src="https://user-images.githubusercontent.com/55932784/114241180-ac450480-9980-11eb-9dd8-edebad9235df.png" alt="Screeplots"></p>
+<p>PCA (Principal Component Analysis) finds new directions based on the covariance matrix of original variables. As the covariance matrix is sensitive to standardisation of variables, standardisation is important to assign equal weights to all the variables. In our dataset some of the variables have a larger standard deviation than others and this means that some might be given a higher weight than another, something we don&rsquo;t want. This means that if we don&rsquo;t standardise the variables before applying PCA, we will get misleading (and different) directions, as can be seen above.</p>
+<p><img src="https://user-images.githubusercontent.com/55932784/114241184-ac450480-9980-11eb-95b3-7b810aac7b17.png" alt="Scatterplots"></p>
+<h4 id="first-2-principal-components-of-non-standardised-data-left-and-standardised-data-right">First 2 principal components of non-standardised data (left) and standardised data (right).</h4>
+<p>For non-standardised data, the new basis show both genuine and counterfeit banknotes as separate groups, with little overlap. Based on this finding we may classify new banknotes to be genuine, or counterfeit. The spread of the data for genuine banknotes is relatively small in comparison to counterfeit banknotes.</p>
+<p>For standardised data, the new basis also show both genuine and counterfeit banknotes as separate groups, but with noticeable overlap. The spread of the data for both banknotes is higher compared to the non-standardised data. There are also many more outliers.</p>
+<h3 id="why-dimensionality-reduction-is-important">Why dimensionality reduction is important</h3>
+<p>There are many benefits of dimensionality reduction techniques such as PCA, one of them is that it reduces model computation time and storage space required. If we were to model a larger dataset of bank notes we could be required to deal with millions of rows, with just 200 notes it is not a problem but when the data gets large it can matter a lot. Additionally, reducing the number of dimensions leads to the removal of multicollinearity. This can improve the interpretation of the parameters of an ML model. For example, in a regression model multicollinearity reduces the precision of the estimate coefficients and therefore weakens the statistical power of the model. Furthermore, in higher dimensions we cannot visualise the data. In our case above we cannot visualise the bank notes in 6 dimensions but we can deal with 2. Being able to visualise data can help us see patterns we would not be able to see otherwise.</p>
+<!-- raw HTML omitted -->
+
+</div>
+
+
+  </main>
+
+  <footer>
+  <div>
+    &copy; Tauseef Rehman 2021
+
+    &middot; <a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank">CC BY-SA 4.0</a>
+
+    &middot; Build with <a href="https://gohugo.io/" target="_blank">Hugo</a> & <a href="https://themes.gohugo.io/soho/" target="_blank">Soho</a> theme
+  </div>
+</footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"
+          integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0="
+          crossorigin="anonymous"></script>
+
+  
+
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-172913848-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</body>
+</html>
